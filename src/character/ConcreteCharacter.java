@@ -1,5 +1,7 @@
 package character;
 
+import java.util.ArrayList;
+
 public class ConcreteCharacter implements Character {
 
     private final int hp = 25;
@@ -13,10 +15,6 @@ public class ConcreteCharacter implements Character {
         return this.hp;
     }
 
-    public int getStat(){
-        return this.armor + this.attack + this.hp + this.speed;
-    }
-
     public int getAttack(){
         return this.attack;
     }
@@ -28,4 +26,9 @@ public class ConcreteCharacter implements Character {
     public int getArmor(){
         return this.armor;
     }
+
+    public int getStat(){
+        return this.armor + this.attack + this.hp + this.speed;
+    }
+
 }

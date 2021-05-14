@@ -1,37 +1,33 @@
 package character.armor;
-
-import java.util.ArrayList;
-
-import javax.security.auth.kerberos.KerberosTicket;
-
 import character.Character;
 import character.Equipment;
 
 public class Helmet extends Equipment {
 
-    private final int stat = 10;
-    private final String name ="Diamond Helmet";
+    private final int armor = 10;
 
     public Helmet (Character character){
         super(character);
     }
 
-    //public int getStat(){
-    //    return super.getCharacter().getStat() + this.stat;
-    //}
+    public int getHP(){
+        return super.getCharacter().getHP();
+    }
+
+    public int getAttack(){
+        return super.getCharacter().getAttack();
+    }
+
+    public int getSpeed(){
+        return super.getCharacter().getSpeed();
+    }
 
     public int getArmor(){
-        return super.getCharacter().getArmor() + this.stat;
+        return super.getCharacter().getArmor() + this.armor;
     }
 
-    public int getHP(){
-        return this.
-    }
-
-    public ArrayList<String> getEquipments(){
-        ArrayList<String> equipments = super.getCharacter().getEquipments();
-        equipments.add(this.name);
-        return equipments;
+    public int getStat(){
+        return super.getCharacter().getStat() + this.armor;
     }
     
 }
