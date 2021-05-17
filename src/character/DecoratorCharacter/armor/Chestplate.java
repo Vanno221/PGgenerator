@@ -1,8 +1,8 @@
 package character.armor;
 import character.Character;
-import character.DecoratorCharacter.Equipment;
+import character.DecoratorCharacter.EquipmentCharacter;
 
-public class Chestplate extends Equipment {
+public class Chestplate extends EquipmentCharacter {
 
     private final int armor = 25;
 
