@@ -1,8 +1,8 @@
 package character;
 
-public class ConcreteDrago implements Character {
+public class ConcreteElf implements AbstractCharacter {
 
-    private final int hp = 25;
+    private final int hp = 15;
     private final int attack = 12;
     private final int speed = 20;
     private final int armor = 10;

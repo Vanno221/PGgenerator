@@ -1,6 +1,5 @@
-package character.weapons;
-import character.Character;
-import character.Equipment;
+package character.DecoratorCharacter.weapons;
+import character.DecoratorCharacter.Equipment;
 
 public class Axe extends Equipment{
 

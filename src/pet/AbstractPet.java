@@ -1,5 +1,7 @@
 package pet;
 
-public class AbstractPet {
+public interface AbstractPet {
+    public int getHP();
+    public int getSpeed();
     
 }

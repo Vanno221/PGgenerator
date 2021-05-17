@@ -1,6 +1,6 @@
 package character;
 
-public class ConcreteUmano implements Character {
+public class ConcreteHuman implements AbstractCharacter {
 
     private final int hp = 25;
     private final int attack = 12;

@@ -1,16 +1,18 @@
-import character.ConcreteDrago;
+import character.AbstractCharacter;
+import character.ConcreteHuman;
+import pet.AbstractPet;
+import pet.ConcreteHorse;
 
-public class DragoFactory extends PGFactory {
+public class ConcreteHumanFactory implements PGFactory {
 
     @Override
-    public Character createCharacter() {
-        return new ConcreteDrago();
+    public AbstractCharacter createCharacter() {
+        return new ConcreteHuman();
     }
 
     @Override
-    public Pet createPet() {
-        // TODO Auto-generated method stub
-        return null;
+    public AbstractPet createPet() {
+        return new ConcreteHorse();
     }
     
 }

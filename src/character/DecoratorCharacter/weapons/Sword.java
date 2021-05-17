@@ -1,6 +1,6 @@
 package character.weapons;
 import character.Character;
-import character.Equipment;
+import character.DecoratorCharacter.Equipment;
 
 public class Sword extends Equipment{
 

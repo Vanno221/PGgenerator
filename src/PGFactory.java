@@ -1,4 +1,7 @@
-public abstract class PGFactory {
-    public abstract Character createCharacter();
-    public abstract Pet createPet();
+import character.AbstractCharacter;
+import pet.AbstractPet;
+
+public interface PGFactory {
+    public abstract AbstractCharacter createCharacter();
+    public abstract AbstractPet createPet();
 }

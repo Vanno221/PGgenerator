@@ -1,15 +1,18 @@
-public class UmanoFactory extends PGFactory {
+import character.AbstractCharacter;
+import character.ConcreteElf;
+import pet.AbstractPet;
+import pet.ConcreteFairy;
+
+public class ConcreteElfFactory implements PGFactory {
 
     @Override
-    public Character createCharacter() {
-        // TODO Auto-generated method stub
-        return null;
+    public AbstractCharacter createCharacter() {
+        return new ConcreteElf();
     }
 
     @Override
-    public Pet createPet() {
-        // TODO Auto-generated method stub
-        return null;
+    public AbstractPet createPet() {
+        return new ConcreteFairy();
     }
     
 }

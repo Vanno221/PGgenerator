@@ -1,7 +1,6 @@
 package character;
-import java.util.ArrayList;
 
-public interface Character{
+public interface AbstractCharacter{
 
     public int getHP();
     public int getStat();

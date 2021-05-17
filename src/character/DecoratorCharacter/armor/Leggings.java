@@ -1,12 +1,12 @@
 package character.armor;
 import character.Character;
-import character.Equipment;
+import character.DecoratorCharacter.Equipment;
 
-public class Helmet extends Equipment {
+public class Leggings extends Equipment {
 
-    private final int armor = 10;
+    private final int armor = 15;
 
-    public Helmet (Character character){
+    public Leggings (Character character){
         super(character);
     }
 
