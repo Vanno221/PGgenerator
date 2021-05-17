@@ -1,5 +1,6 @@
 package character;
 
+//Interfaccia per la creazione dei Character
 public interface AbstractCharacter{
 
     public int getHP();
