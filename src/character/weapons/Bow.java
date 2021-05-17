@@ -1,4 +1,6 @@
 package character.weapons;
+import character.Character;
+import character.Equipment;
 
 public class Bow extends Equipment{
 

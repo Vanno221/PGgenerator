@@ -1,4 +1,4 @@
 public abstract class PGFactory {
-    public abstract PG createCharacter();
-    public abstract PG createPet();
+    public abstract Character createCharacter();
+    public abstract Pet createPet();
 }
