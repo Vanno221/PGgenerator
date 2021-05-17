@@ -12,4 +12,5 @@ public abstract class Equipment implements AbstractCharacter{
     public AbstractCharacter getCharacter(){
         return this.character;
     }
+
 }

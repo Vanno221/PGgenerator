@@ -3,7 +3,7 @@ import character.ConcreteElf;
 import pet.AbstractPet;
 import pet.ConcreteFairy;
 
-//Definizionen della ConcreteFactory per gli Elfi
+//Definizione della ConcreteFactory per gli Elfi
 public class ConcreteElfFactory implements PGFactory {
 
     @Override

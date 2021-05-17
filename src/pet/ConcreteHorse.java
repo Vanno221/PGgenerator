@@ -1,5 +1,6 @@
 package pet;
 
+//Implementazione della interfaccia AbstracPet
 public class ConcreteHorse implements AbstractPet {
         
     private final int hp = 20;
