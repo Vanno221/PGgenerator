@@ -31,4 +31,8 @@ public class SwordIce extends EquipmentCharacter{
         return super.getStat() + this.attack;
     }
     
+    public String getRace(){
+        return super.getRace();
+    }
+
 }

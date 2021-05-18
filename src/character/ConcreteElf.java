@@ -6,6 +6,7 @@ public class ConcreteElf implements AbstractCharacter {
     private final int attack = 12;
     private final int speed = 20;
     private final int armor = 10;
+    private final String race = "Elf";
 
     
     public int getHP(){
@@ -26,6 +27,10 @@ public class ConcreteElf implements AbstractCharacter {
 
     public int getStat(){
         return this.armor + this.attack + this.hp + this.speed;
+    }
+
+    public String getRace(){
+        return this.race;
     }
 
 }

@@ -31,4 +31,7 @@ public class AxeIce extends EquipmentCharacter{
         return super.getStat() + this.attack;
     }
     
+    public String getRace(){
+        return super.getRace();
+    }
 }

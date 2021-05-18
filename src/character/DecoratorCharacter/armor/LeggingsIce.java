@@ -31,4 +31,7 @@ public class LeggingsIce extends EquipmentCharacter {
         return super.getStat() + this.armor;
     }
     
+    public String getRace(){
+        return super.getRace();
+    }
 }

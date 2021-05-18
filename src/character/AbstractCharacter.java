@@ -8,5 +8,7 @@ public interface AbstractCharacter{
     public int getAttack();
     public int getSpeed();
     public int getArmor();
+    public String getRace();
+    
    // public ArrayList<String> getEquipments();
 }

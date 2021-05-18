@@ -29,4 +29,8 @@ public class BootsFire extends EquipmentCharacter {
     public int getStat(){
         return super.getStat() + this.attack + this.speed;
     }
+    
+    public String getRace(){
+        return super.getRace();
+    }
 }

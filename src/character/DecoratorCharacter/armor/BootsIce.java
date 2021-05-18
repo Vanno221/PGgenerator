@@ -29,4 +29,8 @@ public class BootsIce extends EquipmentCharacter {
     public int getStat(){
         return super.getStat() + this.armor + this.speed;
     }
+    
+    public String getRace(){
+        return super.getRace();
+    }
 }

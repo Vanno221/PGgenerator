@@ -30,4 +30,8 @@ public abstract class EquipmentCharacter implements AbstractCharacter{
         return character.getStat();
     }
 
+    public String getRace(){
+        return character.getRace();
+    }
+
 }
