@@ -3,11 +3,11 @@ package character.DecoratorCharacter.weapons;
 import character.AbstractCharacter;
 import character.DecoratorCharacter.EquipmentCharacter;
 
-public class Sword extends EquipmentCharacter{
+public class AxeIce extends EquipmentCharacter{
 
     private final int attack = 15;
 
-    public Sword (AbstractCharacter character){
+    public AxeIce (AbstractCharacter character){
         super(character);
     }
 

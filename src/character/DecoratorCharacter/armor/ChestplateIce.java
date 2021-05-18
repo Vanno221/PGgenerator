@@ -2,11 +2,11 @@ package character.DecoratorCharacter.armor;
 import character.AbstractCharacter;
 import character.DecoratorCharacter.EquipmentCharacter;
 
-public class Boots extends EquipmentCharacter {
-    private final int armor = 5;
-    private final int speed = 15;
+public class ChestplateIce extends EquipmentCharacter {
 
-    public Boots (AbstractCharacter character){
+    private final int armor = 25;
+
+    public ChestplateIce (AbstractCharacter character){
         super(character);
     }
 
@@ -19,7 +19,7 @@ public class Boots extends EquipmentCharacter {
     }
 
     public int getSpeed(){
-        return super.getSpeed() + this.speed;
+        return super.getSpeed();
     }
 
     public int getArmor(){
@@ -27,6 +27,7 @@ public class Boots extends EquipmentCharacter {
     }
 
     public int getStat(){
-        return super.getStat() + this.armor + this.speed;
+        return super.getStat() + this.armor;
     }
+    
 }

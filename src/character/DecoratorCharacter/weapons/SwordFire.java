@@ -1,12 +1,13 @@
-package character.DecoratorCharacter.armor;
+package character.DecoratorCharacter.weapons;
+
 import character.AbstractCharacter;
 import character.DecoratorCharacter.EquipmentCharacter;
 
-public class Chestplate extends EquipmentCharacter {
+public class SwordFire extends EquipmentCharacter{
 
-    private final int armor = 25;
+    private final int attack = 15;
 
-    public Chestplate (AbstractCharacter character){
+    public SwordFire (AbstractCharacter character){
         super(character);
     }
 
@@ -15,7 +16,7 @@ public class Chestplate extends EquipmentCharacter {
     }
 
     public int getAttack(){
-        return super.getAttack();
+        return super.getAttack() + this.attack;
     }
 
     public int getSpeed(){
@@ -23,11 +24,11 @@ public class Chestplate extends EquipmentCharacter {
     }
 
     public int getArmor(){
-        return super.getArmor() + this.armor;
+        return super.getArmor();
     }
-
+    
     public int getStat(){
-        return super.getStat() + this.armor;
+        return super.getStat() + this.attack;
     }
     
 }
