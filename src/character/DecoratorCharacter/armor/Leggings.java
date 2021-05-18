@@ -1,33 +1,34 @@
-package character.armor;
-import character.Character;
+package character.DecoratorCharacter.armor;
+
+import character.AbstractCharacter;
 import character.DecoratorCharacter.EquipmentCharacter;
 
 public class Leggings extends EquipmentCharacter {
 
     private final int armor = 15;
 
-    public Leggings (Character character){
+    public Leggings (AbstractCharacter character){
         super(character);
     }
 
     public int getHP(){
-        return super.getCharacter().getHP();
+        return super.getHP();
     }
 
     public int getAttack(){
-        return super.getCharacter().getAttack();
+        return super.getAttack();
     }
 
     public int getSpeed(){
-        return super.getCharacter().getSpeed();
+        return super.getSpeed();
     }
 
     public int getArmor(){
-        return super.getCharacter().getArmor() + this.armor;
+        return super.getArmor() + this.armor;
     }
 
     public int getStat(){
-        return super.getCharacter().getStat() + this.armor;
+        return super.getStat() + this.armor;
     }
     
 }
