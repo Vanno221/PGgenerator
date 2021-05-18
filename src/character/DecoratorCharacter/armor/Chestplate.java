@@ -1,3 +1,4 @@
+package character.DecoratorCharacter.armor;
 import character.AbstractCharacter;
 import character.DecoratorCharacter.EquipmentCharacter;
 
