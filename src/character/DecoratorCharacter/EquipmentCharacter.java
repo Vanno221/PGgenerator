@@ -1,9 +1,13 @@
 package character.DecoratorCharacter;
 
+import java.util.ArrayList;
+
 import character.AbstractCharacter;
+import observer.Subject;
 
 //Creazione del AbstractDecorator
-public abstract class EquipmentCharacter implements AbstractCharacter{
+public abstract class EquipmentCharacter extends Subject implements AbstractCharacter {
+
     protected AbstractCharacter character;
 
     public EquipmentCharacter(AbstractCharacter character){
