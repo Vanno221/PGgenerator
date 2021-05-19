@@ -6,3 +6,4 @@ public interface Observer {
     
 }
 
+//Le mie subject sono EquipmentCharacter e il costruttore di Pet

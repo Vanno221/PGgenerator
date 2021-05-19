@@ -194,6 +194,12 @@ public class App {
     System.out.println(" SPEED: "+ equipmentFinal.getSpeed());
     System.out.println("");
     System.out.println(" STAT: "+ equipmentFinal.getStat());
+
+    System.out.println("");
+    System.out.println("         RIEPILOGO PET         ");
+    System.out.println(" PET RACE: "+ pet.getRace());
+    System.out.println(" PET HP: "+ pet.getHP());
+    System.out.println(" PET SPEED: "+ pet.getSpeed());
     
   }
 }
