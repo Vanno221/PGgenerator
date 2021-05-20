@@ -1,17 +1,20 @@
 package character.DecoratorCharacter;
 
-import java.util.ArrayList;
+import java.security.KeyStore.ProtectionParameter;
+import java.util.*;
+import java.util.Observer;
 
 import character.AbstractCharacter;
-import observer.Subject;
+import observer.*;
 
 //Creazione del AbstractDecorator
 public abstract class EquipmentCharacter extends Subject implements AbstractCharacter {
 
-    protected AbstractCharacter character;
+    protected AbstractCharacter character; 
 
     public EquipmentCharacter(AbstractCharacter character){
         this.character=character;
+        this.notifyObservers();
     }
 
     public int getHP(){

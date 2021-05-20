@@ -11,13 +11,15 @@ import character.DecoratorCharacter.weapons.*;
 import pet.AbstractPet;
 import character.*;
 import java.io.*;
+import java.util.Scanner;
 
 public class App {
   public static void main(String[] args) throws Exception {
-
+    
     AbstractCharacter character = null;
     AbstractPet pet = null;
-    
+    ConcreteObserver obs = new ConcreteObserver();
+
     EquipmentCharacter equipmentHelmet = null;
     EquipmentCharacter equipmentBoot = null;
     EquipmentCharacter equipmentChestplace = null;
@@ -26,13 +28,14 @@ public class App {
 
     System.out.print("\033[H\033[2J");
     System.out.flush();
-    System.out.println("|   MENU CREAZIONE PERSONAGGIO     |");
-    System.out.println("|                                  |");
-    System.out.println("|        1. ELFO                   |");
-    System.out.println("|        2. UMANO                  |");
-    System.out.println("|        3. EXIT                   |");
+    System.out.println("|   MENU CREAZIONE PERSONAGGIO   |");
+    System.out.println("|                                |");
+    System.out.println("|        1. ELFO                 |");
+    System.out.println("|        2. UMANO                |");
+    System.out.println("|        3. EXIT                 |");
 
     System.out.print("Enter Options: ");
+
     BufferedReader buffReader = new BufferedReader(new InputStreamReader(System.in));
     int input = Integer.parseInt(buffReader.readLine());
 
@@ -70,9 +73,11 @@ public class App {
       case 1:
         equipmentHelmet = new HelmetFire(character);
         break;
+
       case 2:
         equipmentHelmet = new HelmetIce(character);
         break;
+
       default:
         System.out.println("Invalid selection");
     }
@@ -91,7 +96,7 @@ public class App {
 
     switch (input) {
       case 1:
-        equipmentChestplace = new ChestplateFire(equipmentHelmet);
+        equipmentChestplace = new ChestplateFire(equipmentHelmet);        
         break;
       case 2:
         equipmentChestplace = new ChestplateIce(equipmentHelmet);
