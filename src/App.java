@@ -14,20 +14,40 @@ import java.io.*;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    
-    AbstractCharacter character = null;
-    AbstractPet pet = null;
+
+    //Istanza della famiglia Humam
+    PGFactory human = new ConcreteHumanFactory();
+    AbstractCharacter characterHuman = human.createCharacter();
+    AbstractPet petHuman = human.createPet();
+
+    //Istanza della famiglia Elf
+    PGFactory elf = new ConcreteElfFactory();
+    AbstractCharacter characterElf = elf.createCharacter();
+    AbstractPet petElf = elf.createPet();
+
+    //Creazione Lista Characer
     CharacterList list = CharacterList.getObject();
     
+    //Isranza del ConcreteObserver e aggiunta del observer
     ConcreteObserver obs = new ConcreteObserver();
     list.attach(obs);
-    
-    EquipmentCharacter equipmentHelmet = null;
-    EquipmentCharacter equipmentBoot = null;
-    EquipmentCharacter equipmentChestplace = null;
-    EquipmentCharacter equipmentLegging = null;
-    EquipmentCharacter equipmentFinal = null;
 
+    //Costruzione Equipaggiamento del Character tramite decorator    
+    EquipmentCharacter equipmentHelmet = new HelmetIce(characterHuman);
+    list.addCharacter(equipmentHelmet);
+
+    EquipmentCharacter equipmentChestplace = new ChestplateIce(equipmentHelmet);
+    list.addCharacter(equipmentChestplace);
+
+    EquipmentCharacter equipmentLegging = new LeggingsIce(equipmentChestplace);
+    list.addCharacter(equipmentLegging);
+
+    EquipmentCharacter equipmentBoot = new BootsFire(equipmentLegging) ;
+    list.addCharacter(equipmentBoot);
+
+    EquipmentCharacter equipmentFinal = new SwordFire(equipmentBoot);
+    list.addCharacter(equipmentFinal);
+    /*
     System.out.print("\033[H\033[2J");
     System.out.flush();
     System.out.println("|   MENU CREAZIONE PERSONAGGIO   |");
@@ -209,6 +229,6 @@ public class App {
     System.out.println(" PET RACE: "+ pet.getRace());
     System.out.println(" PET HP: "+ pet.getHP());
     System.out.println(" PET SPEED: "+ pet.getSpeed());
-    
+    */
   }
 }

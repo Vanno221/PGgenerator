@@ -29,17 +29,24 @@ public class CharacterList extends Subject{
         this.notifyObservers();
     }
 
-    public String getAll(){
+    public String toString(){
 
-        String s = "RIEPILOGO PERSONAGGI:\n";
+        String s = null;
 
-        for(EquipmentCharacter m : this.characters){
-            s += m + "\n";
-            s += "RAZZA: " + m.getRace() + "\n";
-            s += "HP: " + m.getHP() + "\n";
-            s += "SPEED: " + m.getSpeed() + "\n";
-            s += "ARMOR: " + m.getArmor() + "\n";
-            s += "ATTACK: " + m.getAttack() + "\n";
+        for(EquipmentCharacter tmp : this.characters){
+
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+
+            s += "RIEPILOGO PERSONAGGIO:\n";
+            s +=  "\n";
+            s += "RAZZA: " + tmp.getRace() + "\n";
+            s += "HP: " + tmp.getHP() + "\n";
+            s += "SPEED: " + tmp.getSpeed() + "\n";
+            s += "ARMOR: " + tmp.getArmor() + "\n";
+            s += "ATTACK: " + tmp.getAttack() + "\n \n";
+            s += "STAT: " + tmp.getStat() + "\n";
+
         };
         return s;
     }
