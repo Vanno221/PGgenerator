@@ -17,7 +17,11 @@ public class App {
     
     AbstractCharacter character = null;
     AbstractPet pet = null;
-
+    CharacterList list = CharacterList.getObject();
+    
+    ConcreteObserver obs = new ConcreteObserver();
+    list.attach(obs);
+    
     EquipmentCharacter equipmentHelmet = null;
     EquipmentCharacter equipmentBoot = null;
     EquipmentCharacter equipmentChestplace = null;
@@ -189,6 +193,8 @@ public class App {
     }
     System.out.print("\033[H\033[2J");
     System.out.flush();
+    list.addCharacter(equipmentFinal);
+    list.getAll();
     System.out.println("         RIEPILOGO PERSONAGGIO         ");
     System.out.println(" RAZZA: "+ equipmentFinal.getRace());
     System.out.println(" HP: "+ equipmentFinal.getHP());
