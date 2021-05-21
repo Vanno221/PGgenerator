@@ -8,13 +8,12 @@ import character.AbstractCharacter;
 import observer.*;
 
 //Creazione del AbstractDecorator
-public abstract class EquipmentCharacter extends Subject implements AbstractCharacter {
+public abstract class EquipmentCharacter implements AbstractCharacter {
 
     protected AbstractCharacter character; 
 
     public EquipmentCharacter(AbstractCharacter character){
         this.character=character;
-        this.notifyObservers();
     }
 
     public int getHP(){

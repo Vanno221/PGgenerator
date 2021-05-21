@@ -11,14 +11,12 @@ import character.DecoratorCharacter.weapons.*;
 import pet.AbstractPet;
 import character.*;
 import java.io.*;
-import java.util.Scanner;
 
 public class App {
   public static void main(String[] args) throws Exception {
     
     AbstractCharacter character = null;
     AbstractPet pet = null;
-    ConcreteObserver obs = new ConcreteObserver();
 
     EquipmentCharacter equipmentHelmet = null;
     EquipmentCharacter equipmentBoot = null;
