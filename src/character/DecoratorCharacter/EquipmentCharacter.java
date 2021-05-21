@@ -1,11 +1,6 @@
 package character.DecoratorCharacter;
 
-import java.security.KeyStore.ProtectionParameter;
-import java.util.*;
-import java.util.Observer;
-
 import character.AbstractCharacter;
-import observer.*;
 
 //Creazione del AbstractDecorator
 public abstract class EquipmentCharacter implements AbstractCharacter {
