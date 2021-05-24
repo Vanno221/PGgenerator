@@ -29,6 +29,24 @@ public class CharacterList extends Subject{
         this.notifyObservers();
     }
 
+    public String toString(){
+
+        String s = "";
+
+        EquipmentCharacter tmp = this.characters.get(this.characters.size() - 1);
+        
+            s += "RIEPILOGO PERSONAGGIO:\n";
+            s +=  "\n";
+            s += "RAZZA: " + tmp.getRace() + "\n";
+            s += "HP: " + tmp.getHP() + "\n";
+            s += "SPEED: " + tmp.getSpeed() + "\n";
+            s += "ARMOR: " + tmp.getArmor() + "\n";
+            s += "ATTACK: " + tmp.getAttack() + "\n \n";
+            s += "STAT: " + tmp.getStat() + "\n";
+      
+        return s;
+    }
+    
     // public String toString(){
 
     //     String s = "";
@@ -49,23 +67,5 @@ public class CharacterList extends Subject{
     //     };
     //     return s;
     // }
-
-    public String toString(){
-
-        String s = "";
-
-        EquipmentCharacter tmp = this.characters.get(this.characters.size() - 1);
-        
-            s += "RIEPILOGO PERSONAGGIO:\n";
-            s +=  "\n";
-            s += "RAZZA: " + tmp.getRace() + "\n";
-            s += "HP: " + tmp.getHP() + "\n";
-            s += "SPEED: " + tmp.getSpeed() + "\n";
-            s += "ARMOR: " + tmp.getArmor() + "\n";
-            s += "ATTACK: " + tmp.getAttack() + "\n \n";
-            s += "STAT: " + tmp.getStat() + "\n";
-      
-        return s;
-    }
     
 }
