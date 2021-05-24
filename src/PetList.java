@@ -20,7 +20,7 @@ public class PetList extends Subject{
         return tmp;
     }
 
-    public void addCharacter(AbstractPet pet){
+    public void addPet(AbstractPet pet){
         this.pets.add(pet);
         this.notifyObservers();
     }
@@ -36,9 +36,9 @@ public class PetList extends Subject{
 
         for(AbstractPet tmp: this.pets){
 
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
-            s += "RIEPILOGO PET:\n";
+            //System.out.print("\033[H\033[2J");
+            //System.out.flush();
+            s = "RIEPILOGO PET:\n";
             s +=  "\n";
             s += "RAZZA: " + tmp.getRace() + "\n";
             s += "HP: " + tmp.getHP() + "\n";

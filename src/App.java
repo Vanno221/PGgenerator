@@ -36,7 +36,7 @@ public class App {
 
     //Costruzione Equipaggiamento del Character tramite decorator    
     EquipmentCharacter equipmentHelmet = new HelmetIce(characterHuman);
-    list.addCharacter(equipmentHelmet);
+    list.addCharacter(equipmentHelmet); 
 
     EquipmentCharacter equipmentChestplace = new ChestplateIce(equipmentHelmet);
     list.addCharacter(equipmentChestplace);
@@ -49,5 +49,7 @@ public class App {
 
     EquipmentCharacter equipmentFinal = new SwordFire(equipmentBoot);
     list.addCharacter(equipmentFinal);
+    
+    petlist.addPet(petElf);
   }
 }
