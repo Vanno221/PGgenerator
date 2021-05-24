@@ -32,7 +32,7 @@ public class PetList extends Subject{
 
     public String toString(){
 
-        String s = null;
+        String s = "";
 
         for(AbstractPet tmp: this.pets){
 

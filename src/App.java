@@ -1,16 +1,8 @@
 import character.DecoratorCharacter.EquipmentCharacter;
-import character.DecoratorCharacter.armor.BootsFire;
-import character.DecoratorCharacter.armor.BootsIce;
-import character.DecoratorCharacter.armor.ChestplateFire;
-import character.DecoratorCharacter.armor.ChestplateIce;
-import character.DecoratorCharacter.armor.HelmetFire;
-import character.DecoratorCharacter.armor.HelmetIce;
-import character.DecoratorCharacter.armor.LeggingsFire;
-import character.DecoratorCharacter.armor.LeggingsIce;
+import character.DecoratorCharacter.armor.*;
 import character.DecoratorCharacter.weapons.*;
 import pet.AbstractPet;
 import character.*;
-import java.io.*;
 
 public class App {
   public static void main(String[] args) throws Exception {
@@ -29,7 +21,7 @@ public class App {
     CharacterList list = CharacterList.getObject();
     PetList petlist = PetList.getObject();
     
-    //Isranza del ConcreteObserver e aggiunta del observer
+    //Istanza del ConcreteObserver e aggiunta del observer
     ConcreteObserver obs = new ConcreteObserver();
     list.attach(obs);
     petlist.attach(obs);
@@ -59,9 +51,7 @@ public class App {
     EquipmentCharacter equipmentFinalElf = new SwordFire(equipmentBoot2);
     list.addCharacter(equipmentFinalElf);
 
-    petlist.addPet(petElf);
-
-  
+    petlist.addPet(petElf); 
    
   }
 }
