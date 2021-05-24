@@ -34,22 +34,34 @@ public class App {
     list.attach(obs);
     petlist.attach(obs);
 
-    //Costruzione Equipaggiamento del Character tramite decorator    
-    EquipmentCharacter equipmentHelmet = new HelmetIce(characterHuman);
-    list.addCharacter(equipmentHelmet); 
+    //Costruzione Equipaggiamento del Character Human tramite decorator    
+    EquipmentCharacter equipmentHelmet = new HelmetIce(characterHuman); 
 
     EquipmentCharacter equipmentChestplace = new ChestplateIce(equipmentHelmet);
-    list.addCharacter(equipmentChestplace);
 
     EquipmentCharacter equipmentLegging = new LeggingsIce(equipmentChestplace);
-    list.addCharacter(equipmentLegging);
 
     EquipmentCharacter equipmentBoot = new BootsFire(equipmentLegging) ;
-    list.addCharacter(equipmentBoot);
 
-    EquipmentCharacter equipmentFinal = new SwordFire(equipmentBoot);
-    list.addCharacter(equipmentFinal);
-    
+    EquipmentCharacter equipmentFinalHuman = new SwordFire(equipmentBoot);
+    list.addCharacter(equipmentFinalHuman);
+
+    petlist.addPet(petHuman);
+
+    //Costruzione Equipaggiamento del Character Elf tramite decorator    
+    EquipmentCharacter equipmentHelmet2 = new HelmetIce(characterElf); 
+    EquipmentCharacter equipmentChestplace2 = new ChestplateIce(equipmentHelmet2);
+
+    EquipmentCharacter equipmentLegging2 = new LeggingsIce(equipmentChestplace2);
+
+    EquipmentCharacter equipmentBoot2 = new BootsFire(equipmentLegging2) ;
+
+    EquipmentCharacter equipmentFinalElf = new SwordFire(equipmentBoot2);
+    list.addCharacter(equipmentFinalElf);
+
     petlist.addPet(petElf);
+
+  
+   
   }
 }
