@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-import character.DecoratorCharacter.EquipmentCharacter;
 import observer.Subject;
 import pet.AbstractPet;
 

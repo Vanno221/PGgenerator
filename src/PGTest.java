@@ -1,6 +1,4 @@
-import character.AbstractCharacter;
-import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;  
+import org.junit.Test;  
 
 public class PGTest {
         

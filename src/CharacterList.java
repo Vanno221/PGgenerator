@@ -29,12 +29,18 @@ public class CharacterList extends Subject{
         this.notifyObservers();
     }
 
+    
     public String toString(){
 
         String s = "";
+       
+        //     EquipmentCharacter tmp = this.characters.get(this.characters.size() - 1);
 
-        EquipmentCharacter tmp = this.characters.get(this.characters.size() - 1);
-        
+        for(EquipmentCharacter tmp : this.characters){
+
+            // System.out.print("\033[H\033[2J");
+            // System.out.flush();
+
             s += "RIEPILOGO PERSONAGGIO:\n";
             s +=  "\n";
             s += "RAZZA: " + tmp.getRace() + "\n";
@@ -43,29 +49,8 @@ public class CharacterList extends Subject{
             s += "ARMOR: " + tmp.getArmor() + "\n";
             s += "ATTACK: " + tmp.getAttack() + "\n \n";
             s += "STAT: " + tmp.getStat() + "\n";
-      
+        };
         return s;
     }
-    
-    // public String toString(){
-
-    //     String s = "";
-
-    //     for(EquipmentCharacter tmp : this.characters){
-
-    //         System.out.print("\033[H\033[2J");
-    //         System.out.flush();
-
-    //         s += "RIEPILOGO PERSONAGGIO:\n";
-    //         s +=  "\n";
-    //         s += "RAZZA: " + tmp.getRace() + "\n";
-    //         s += "HP: " + tmp.getHP() + "\n";
-    //         s += "SPEED: " + tmp.getSpeed() + "\n";
-    //         s += "ARMOR: " + tmp.getArmor() + "\n";
-    //         s += "ATTACK: " + tmp.getAttack() + "\n \n";
-    //         s += "STAT: " + tmp.getStat() + "\n";
-    //     };
-    //     return s;
-    // }
     
 }
