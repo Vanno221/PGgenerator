@@ -36,12 +36,13 @@ public class App {
     EquipmentCharacter equipmentBoot = new BootsFire(equipmentLegging) ;
 
     EquipmentCharacter equipmentFinalHuman = new SwordFire(equipmentBoot);
-    list.addCharacter(equipmentFinalHuman);
 
+    list.addCharacter(equipmentFinalHuman);
     petlist.addPet(petHuman);
 
     //Costruzione Equipaggiamento del Character Elf tramite decorator    
     EquipmentCharacter equipmentHelmet2 = new HelmetIce(characterElf); 
+    
     EquipmentCharacter equipmentChestplace2 = new ChestplateIce(equipmentHelmet2);
 
     EquipmentCharacter equipmentLegging2 = new LeggingsIce(equipmentChestplace2);
@@ -49,8 +50,8 @@ public class App {
     EquipmentCharacter equipmentBoot2 = new BootsFire(equipmentLegging2) ;
 
     EquipmentCharacter equipmentFinalElf = new SwordFire(equipmentBoot2);
-    list.addCharacter(equipmentFinalElf);
 
+    list.addCharacter(equipmentFinalElf);
     petlist.addPet(petElf); 
    
   }

@@ -35,8 +35,6 @@ public class PetList extends Subject{
 
         for(AbstractPet tmp: this.pets){
 
-            //System.out.print("\033[H\033[2J");
-            //System.out.flush();
             s = "RIEPILOGO PET:\n";
             s +=  "\n";
             s += "RAZZA: " + tmp.getRace() + "\n";

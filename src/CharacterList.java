@@ -34,12 +34,7 @@ public class CharacterList extends Subject{
 
         String s = "";
        
-        //     EquipmentCharacter tmp = this.characters.get(this.characters.size() - 1);
-
         for(EquipmentCharacter tmp : this.characters){
-
-            // System.out.print("\033[H\033[2J");
-            // System.out.flush();
 
             s += "RIEPILOGO PERSONAGGIO:\n";
             s +=  "\n";
@@ -50,6 +45,7 @@ public class CharacterList extends Subject{
             s += "ATTACK: " + tmp.getAttack() + "\n \n";
             s += "STAT: " + tmp.getStat() + "\n";
         };
+        
         return s;
     }
     
