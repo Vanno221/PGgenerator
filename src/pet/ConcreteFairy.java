@@ -18,4 +18,8 @@ public class ConcreteFairy implements AbstractPet{
     public String getRace(){
         return this.race;
     }
+
+    public int getStat(){
+        return this.hp + this.speed;
+    }
 }

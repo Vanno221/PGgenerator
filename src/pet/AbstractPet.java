@@ -5,5 +5,6 @@ public interface AbstractPet {
     public int getHP();
     public int getSpeed();
     public String getRace();
+    public int getStat();
     
 }
