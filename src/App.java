@@ -1,6 +1,7 @@
 import character.DecoratorCharacter.EquipmentCharacter;
 import character.DecoratorCharacter.armor.*;
 import character.DecoratorCharacter.weapons.*;
+import observer.ConcreteObserver;
 import pet.AbstractPet;
 import character.*;
 

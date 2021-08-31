@@ -1,7 +1,4 @@
-import observer.Observer;
-import observer.Subject;
-
-
+package observer;
 public class ConcreteObserver implements Observer {
 
     public void update(Subject subject){
