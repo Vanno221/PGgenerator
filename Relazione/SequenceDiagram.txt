@@ -1,0 +1,26 @@
+title PGgenerator
+
+Client->ConcreteHumanFactory:createCharacter() : AbstractCharacter
+Client->ConcreteHumanFactory:createPet() : AbstractPet
+
+Client->ConcreteElfFactory:createCharacter() : AbstractCharacter
+Client->ConcreteElfFactory:createPet() : AbstractPet
+
+
+Client->CharacterList: getObject() : CharacterList
+Client->PetList: getObject() : PetList
+
+Client-->ConcreteObserver :
+
+Client->CharacterList : attach(obs : Observer = obs) : void
+
+Client->PetList : attach(obs : Observer = obs) : void
+
+Client-->EquipmentHelmet :
+Client-->EquipmentChestplace :
+Client-->EquipmentLeggings :
+Client-->EquipmentBoot :
+Client-->EquipmentSword :
+
+Client->CharacterList : addCharacter(character : EquipmentCharacter = EquipmentFinal) : void
+Client->PetList : addPet(pet : AbstractPet = petElf) : void

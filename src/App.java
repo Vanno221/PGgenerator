@@ -43,7 +43,6 @@ public class App {
 
     //Costruzione Equipaggiamento del Character Elf tramite decorator    
     EquipmentCharacter equipmentHelmet2 = new HelmetIce(characterElf); 
-
     
     EquipmentCharacter equipmentChestplace2 = new ChestplateIce(equipmentHelmet2);
 
